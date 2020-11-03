@@ -36,25 +36,25 @@ export class ServerElementComponent
 
   constructor() {}
 
-  ngOnChanges() {
+  ngOnChanges(): void {
     console.log('ngOnChanges');
   }
-  ngDoCheck() {
+  ngDoCheck(): void {
     console.log('ngDoCheck');
   }
-  ngAfterContentInit() {
+  ngAfterContentInit(): void {
     console.log('ngAfterContentInit');
   }
-  ngAfterContentChecked() {
+  ngAfterContentChecked(): void {
     console.log('ngAfterContentChecked');
   }
-  ngAfterViewInit() {
+  ngAfterViewInit(): void {
     console.log('ngAfterViewInit');
   }
-  ngAfterViewChecked() {
+  ngAfterViewChecked(): void {
     console.log('ngAfterViewChecked');
   }
-  ngOnDestroy() {
+  ngOnDestroy(): void {
     console.log('ngOnDestroy');
   }
 
