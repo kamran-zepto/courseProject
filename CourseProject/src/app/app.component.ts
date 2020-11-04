@@ -6,23 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  serverElements = [
-    { type: 'server', name: 'Test', content: 'This is test content' },
-    { type: 'blueprint', name: 'Test', content: 'This is test content' },
-  ];
+  title = 'CourseProject';
+  selectedFeature = 'recipes';
 
-  onServerCreated(serverData) {
-    this.serverElements.push({
-      type: 'server',
-      name: serverData.name,
-      content: serverData.content,
-    });
-  }
-  onBluePrintCreated(serverData: { name: string; content: string }) {
-    this.serverElements.push({
-      type: 'blueprint',
-      name: serverData.name,
-      content: serverData.content,
-    });
+  onNavigate(feature: string) {
+    this.selectedFeature = feature;
   }
 }
