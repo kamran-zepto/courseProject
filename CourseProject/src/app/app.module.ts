@@ -10,6 +10,8 @@ import { RecipeDetailComponent } from './recipes/recipe-detail/recipe-detail.com
 import { RecipeItemComponent } from './recipes/recipe-list/recipe-item/recipe-item.component';
 import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
 import { HighlighterDirective } from './highlighter.directive';
+import { UnlessDirective } from './unless.directive';
+import { DropdownDirective } from './dropdown.directive';
 
 @NgModule({
   declarations: [
@@ -22,6 +24,8 @@ import { HighlighterDirective } from './highlighter.directive';
     RecipeItemComponent,
     ShoppingEditComponent,
     HighlighterDirective,
+    UnlessDirective,
+    DropdownDirective,
   ],
   imports: [BrowserModule],
   providers: [],
