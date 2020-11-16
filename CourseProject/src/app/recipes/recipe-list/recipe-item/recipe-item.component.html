@@ -1,9 +1,9 @@
-<a href="#" class="list-group-item-action clearfix" (click)="onSelectedTab()">
-  <div class="float-left">
+<a href="#" class="list-group-item clearfix" (click)="onSelectedTab()">
+  <div class="pull-left">
     <h4 class="list-group-item-heading">{{ recipeItem.name }}</h4>
     <p class="list-group-item-text">{{ recipeItem.description }}</p>
   </div>
-  <span class="float-right">
+  <span class="pull-right">
     <img
       [src]="recipeItem.imagePath"
       alt="{{ recipeItem.name }}"
