@@ -9,11 +9,10 @@ import { RecipeService } from '../../recipe.service';
 })
 export class RecipeItemComponent implements OnInit {
   @Input('recipe') recipeItem: Recipe;
-  @Output() recipeSelected = new EventEmitter<void>();
   constructor(private recipeService: RecipeService) {}
 
   onSelectedTab() {
-    this.recipeSelected.emit();
+    this.recipeService.selectedRecipe.emit(this.recipeItem);
   }
 
   ngOnInit(): void {}

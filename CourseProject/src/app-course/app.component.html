@@ -1,0 +1,16 @@
+<app-header (featureSelected)="onNavigate($event)"></app-header>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <app-recipes *ngIf="selectedFeature === 'recipes'"></app-recipes>
+      <app-shopping-list
+        *ngIf="selectedFeature !== 'recipes'"
+      ></app-shopping-list>
+    </div>
+  </div>
+</div>
+<!-- <div *appUnless="true">
+  <p appHighlighter="red" defaultColor="yellow">This directive is working!</p>
+</div> -->
+<!-- <p [ngClass]="{ show: 4 % 2 === 2 }">Testing</p>
+<p [ngStyle]="{ backgroundColor: 2 === 2 ? 'yellow' : 'red' }">Testing</p> -->
